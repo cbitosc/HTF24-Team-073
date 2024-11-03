@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSpark - Sign Up</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+
+        header p {
+            color: #7f8c8d;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login-form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button:hover {
+            background-color: #27ae60;
+        }
+
+        .links {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .links a {
+            color: #2980b9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-login {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-button {
+            padding: 10px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px 0;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .social-button:hover {
+            background-color: #d35400;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <header>
+            <h1>SocialSpark</h1>
+            <p>Join Us and Make a Difference</p>
+        </header>
+        
+        <form class="login-form" id="registrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="username" placeholder="Enter your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            
+            <div class="error-message" style="color: red; display: none;">Error message here.</div>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <nav class="links">
+            <a href="login.html">Already have an account? Log In</a>
+        </nav>
+        
+        <div class="social-login">
+            <button type="button" class="social-button">Sign up with Google</button>
+            <button type="button" class="social-button">Sign up with Facebook</button>
+        </div>
+
+        <footer>
+            <p>About Us | Contact Us | Privacy Policy | Terms of Service</p>
+        </footer>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

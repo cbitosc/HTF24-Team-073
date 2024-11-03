@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Dashboard Container */
+    .dashboard-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* User Info Section */
+    #userInfo {
+      padding: 20px;
+      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    #userInfo p {
+      margin-bottom: 8px;
+    }
+
+    #userInfo strong {
+      color: #0056b3;
+    }
+
+    /* Widget Styles */
+    .widget {
+      background-color: #f9fafb;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .widget h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .widget p, .widget ul {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .widget ul {
+      list-style: disc inside;
+      padding-left: 10px;
+    }
+
+    .widget li {
+      margin: 5px 0;
+    }
+
+    /* Form Styles */
+    form {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+      width: 100px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 15px;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004494;
+    }
+
+    /* Logout Button */
+    #logout {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff6b6b, #ff4e50);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    #logout:hover {
+      background: linear-gradient(45deg, #ff4e50, #ff6b6b);
+      transform: scale(1.02);
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .dashboard-container {
+        padding: 15px;
+      }
+
+      .widget {
+        padding: 15px;
+      }
+
+      button, #logout {
+        width: 100%;
+      }
+
+      input[type="number"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div id="userInfo">
+      <p><strong>Username:</strong> <span id="username"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Total Volunteer Hours:</strong> <span id="totalHours"></span></p>
+      <p><strong>Total Donated:</strong> <span id="totalDonated"></span></p>
+    </div>
+
+    <!-- Volunteer Stats Section -->
+    <div class="widget volunteer-stats">
+      <h2>Volunteer Stats</h2>
+      <p>Total Hours: <span id="total-hours">50</span></p>
+      <p>Recent Activities: Community Cleanup, Food Drive</p>
+    </div>
+
+    <!-- Donations Section -->
+    <div class="widget donations">
+      <h2>Donations</h2>
+      <p>Total Donated: $<span id="total-donated">500</span></p>
+      <p>Recent Donation: $50 to Education Fund</p>
+    </div>
+
+    <!-- Impact Summary Section -->
+    <div class="widget impact-summary">
+      <h2>Impact Summary</h2>
+      <p>People Helped: <span id="people-helped">200</span></p>
+      <p>Projects Supported: 5</p>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="widget recommendations">
+      <h2>Recommended Opportunities</h2>
+      <ul>
+        <li>Volunteer at Shelter</li>
+        <li>Fundraising for Local Schools</li>
+      </ul>
+    </div>
+
+    <!-- Upcoming Events Section -->
+    <div class="widget upcoming-events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Park Cleanup - June 20</li>
+        <li>Food Donation Drive - July 10</li>
+      </ul>
+    </div>
+
+    <!-- Forms for Updating Hours and Donations -->
+    <h2>Update Volunteer Hours</h2>
+    <form id="update-hours-form">
+      <input type="number" id="hours" placeholder="Enter hours" required>
+      <button type="submit">Update</button>
+    </form>
+
+    <h2>Update Donations</h2>
+    <form id="update-donations-form">
+      <input type="number" id="donation" placeholder="Enter donation amount" required>
+      <button type="submit">Update</button>
+    </form>
+
+    <!-- Logout Button -->
+    <button id="logout">Logout</button>
+  </div>
+  
+  <script src="dashboard.js"></script>
+</body>
+</html>

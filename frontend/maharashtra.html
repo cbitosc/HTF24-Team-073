@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra NGOs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Center text */
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 20px;
+            justify-items: center; /* Center items within the grid */
+        }
+        .ngo {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%; /* Ensure full width of grid cell */
+            max-width: 250px; /* Optional max width for each NGO card */
+        }
+        .ngo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .ngo img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .ngo h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .ngo p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #333;
+            transition: color 0.2s;
+        }
+        .back-button:hover {
+            color: #007BFF; /* Change color on hover */
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* Two columns */
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr; /* One column */
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="Explore.html" class="back-button">&larr;</a>
+    <h1>Maharashtra NGOs</h1>
+    <div class="container">
+        <div class="ngo">
+            <a href="https://katalystindia.org">
+                <img src="images-9.png" alt="Katalyst India">
+                <h3>Katalyst India</h3>
+                <p>Empowering women and children through education and resources.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://www.preranango.org">
+                <img src="images-8.png" alt="Prerana NGO">
+                <h3>Prerana NGO</h3>
+                <p>Helping victims of human trafficking.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://give.do/ngos/catalysts-for-social-action">
+                <img src="istockphoto-1271755993-612x612.jpg" alt="Catalysts for Social Action">
+                <h3>Catalysts for Social Action</h3>
+                <p>Focusing on child welfare and education.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://www.concernindiafoundation.org">
+                <img src="images.jpeg" alt="Concern India Foundation">
+                <h3>Concern India Foundation</h3>
+                <p>Supporting education, health, and community development.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://lightoflifetrust.org">
+                <img src="images-4.jpeg" alt="Light of Life Trust">
+                <h3>Light of Life Trust</h3>
+                <p>Transforming lives through education and empowerment.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://www.khaanachahiye.com">
+                <img src="5f59691facaeb8974127b0ba_KhaanaChahiye_160x240@4x.png" alt="Khaana Chahiye">
+                <h3>Khaana Chahiye</h3>
+                <p>Providing food to those in need.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://sparshatrust.com">
+                <img src="images-10.png" alt="Sparsha Trust">
+                <h3>Sparsha Trust</h3>
+                <p>Helping underprivileged children through education.</p>
+            </a>
+        </div>
+        <div class="ngo">
+            <a href="https://swadesfoundation.org">
+                <img src="logo-vertical-for-web_ayodko.png" alt="Swades Foundation">
+                <h3>Swades Foundation</h3>
+                <p>Empowering rural India through education and livelihood.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

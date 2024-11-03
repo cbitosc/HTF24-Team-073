@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('watercolor-international-human-solidarity-day-background_23-2149837203.jpg.avif') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #2ecc71;
+    outline: none;
+}
+
+.login-form button {
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #27ae60;
+}
+
+.links {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.links a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #1e6a9e;
+    text-decoration: underline;
+}
+
+.social-login {
+    margin: 20px 0;
+}
+
+.social-button {
+    padding: 12px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #d35400;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
